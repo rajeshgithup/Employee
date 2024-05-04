@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Empcontroller {
 	@Autowired EmpService es;
-	@PostMapping("/newemp")
+	@PostMapping("/newempsave")
 	public String saveemp(@RequestBody Employee e) {
 		return es.saveemp(e);
 	}
